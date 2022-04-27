@@ -1,0 +1,31 @@
+input {
+  background-color: transparent;
+
+  font-size: 23px;
+  line-height: 34px;
+
+  width: 488px;
+  color: #FFFFFF;
+
+  border: transparent;
+  border-bottom: 1px solid #ffffff59;
+
+  padding: 2px 30px 15px 0;
+
+  position: relative;
+}
+
+input[name=username]{
+  background: url("../pug/elements/inputs/assets/user.svg") no-repeat;
+  background-position: 98% 30%;
+}
+
+input[name=email]{
+  background: url("../pug/elements/inputs/assets/email.svg") no-repeat;
+  background-position: 98% 30%;
+}
+
+input[name=password]{
+  background: url("../pug/elements/inputs/assets/password.svg") no-repeat;
+  background-position: 98% 30%;
+}

@@ -63,8 +63,18 @@ const plugins = () => {
   const base = [
     new HtmlWebpackPlugin({
       // template: './index.html',
+      filename: 'index.html',
       template: './index.pug',
+      chunks: ['main'],
       minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'ui-kit.html',
+      template: './pages/ui-kit.pug',
+      chunks: ['ui_kit'],
+            minify: {
         collapseWhitespace: isProd
       }
     }),
@@ -92,7 +102,7 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
     main: ['@babel/polyfill', './index.js'],
-    analytics: './analytics.ts'
+    ui_kit: ['@babel/polyfill', './pages/ui-kit.js'],
   },
   output: {
     filename: filename('js'),

@@ -1,0 +1,39 @@
+@import "../pug/blocks/ui-kit_buttons/ui-kit_buttons.scss";
+@import "../pug/blocks/ui-kit_inputs/ui-kit_inputs.scss";
+
+body {
+  background: #000000;
+}
+
+.ui-kit__inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1440px;
+  width: 100%;
+  min-width: 510px;
+
+  padding: 5px;
+
+  margin: 0 auto;
+}
+
+.uikit__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+
+  max-width: 520px;
+  width: 100%;
+
+  margin: 5px 10px;
+  padding: 10px;
+
+  border: 1px solid #505050;
+
+  border-radius: 8px;
+}

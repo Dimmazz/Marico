@@ -1,14 +1,13 @@
-$border: 1px solid #ccc;
+@import "~normalize.css";
+@import "./fonts.scss";
+@import "./default.scss";
 
-.card{
-  padding: 1rem;
-  border-radius: 5px;
-  margin-top: 1rem;
+.container {
+  padding-top: 2rem;
 
-  border: $border;
+  max-width: 1920px;
+  width: 100%;
+  min-width: 320px;
 
-  h2{
-    text-align: center;
-    color: darkred;
-  }
+  margin: 0 auto;
 }

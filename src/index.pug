@@ -1,19 +1,10 @@
 include pug/libs/_libs
 
 doctype html
-html(lang=en)
-  include pug/_head
+html(lang="en")
+
+  include pug/libs/_head
+
   body
-    .container
-      h1 Webpack Course
-      hr
-      .logo
-      hr
-      pre
-      hr
-      .box
-        h2 Less
-      .card
-        h2 Scss
-      .img 
-        +imagePNG("webpack-logo")
+    a(href="./ui-kit.html") Check our UI-kit
+    include pug/blocks/ui-kit_buttons/ui-kit_buttons
