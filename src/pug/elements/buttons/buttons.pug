@@ -1,2 +1,3 @@
-mixin button(className, content)
-    button.btn(class=className)=content
+mixin button(className, link, content)
+    button.btn(class=className)
+        a(href=link)=content
