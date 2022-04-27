@@ -64,15 +64,15 @@ const plugins = () => {
     new HtmlWebpackPlugin({
       // template: './index.html',
       filename: 'index.html',
-      template: './index.pug',
-      chunks: ['main'],
+      template: './pages/index/index.pug',
+      chunks: ['index'],
       minify: {
         collapseWhitespace: isProd
       }
     }),
     new HtmlWebpackPlugin({
       filename: 'ui-kit.html',
-      template: './pages/ui-kit.pug',
+      template: './pages/ui-kit/ui-kit.pug',
       chunks: ['ui_kit'],
             minify: {
         collapseWhitespace: isProd
@@ -101,8 +101,8 @@ const plugins = () => {
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
-    main: ['@babel/polyfill', './index.js'],
-    ui_kit: ['@babel/polyfill', './pages/ui-kit.js'],
+    index: ['@babel/polyfill', './pages/index/index.js'],
+    ui_kit: ['@babel/polyfill', './pages/ui-kit/ui-kit.js'],
   },
   output: {
     filename: filename('js'),

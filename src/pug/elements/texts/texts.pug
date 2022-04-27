@@ -3,6 +3,10 @@ mixin p(className, content)
     
 mixin h1(className, content)
     h1(class=className)=content
+
+mixin title(className, content, lastContent)
+    h1(class=className)=content
+        p =lastContent
     
 mixin h2(className, content)
     h2(class=className)=content

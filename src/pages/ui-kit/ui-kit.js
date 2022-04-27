@@ -2,5 +2,5 @@
 // import json from './assets/json.json'
 // import xml from './assets/data.xml'
 // import csv from './assets/data.csv'
-import '../styles/scss.scss'
+import '../../styles/scss.scss'
 import './ui-kit.scss'

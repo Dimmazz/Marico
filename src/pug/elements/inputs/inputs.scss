@@ -16,16 +16,16 @@ input {
 }
 
 input[name=username]{
-  background: url("../pug/elements/inputs/assets/user.svg") no-repeat;
+  background: url("../../pug/elements/inputs/assets/user.svg") no-repeat;
   background-position: 98% 30%;
 }
 
 input[name=email]{
-  background: url("../pug/elements/inputs/assets/email.svg") no-repeat;
+  background: url("../../pug/elements/inputs/assets/email.svg") no-repeat;
   background-position: 98% 30%;
 }
 
 input[name=password]{
-  background: url("../pug/elements/inputs/assets/password.svg") no-repeat;
+  background: url("../../pug/elements/inputs/assets/password.svg") no-repeat;
   background-position: 98% 30%;
 }
