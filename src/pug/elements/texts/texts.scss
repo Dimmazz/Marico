@@ -18,6 +18,28 @@ h2{
   font-weight: 700;
   font-size: 112px;
   line-height: 168px;
+
+  padding-bottom: 135px;
+
+  span{
+    background: linear-gradient(90deg, #FE6783 1.9%, #FFBF84 97.1%);
+
+    background-clip: inherit;
+
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+  }
+
 }
 
 .desc {
@@ -28,4 +50,9 @@ h2{
   text-align: center;
 
   color: #ffffff;
+
+  max-width: 700px;
+  margin: 0 auto;
+
+  padding-bottom: 50px;
 }

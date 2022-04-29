@@ -1,3 +1,15 @@
-// @import "../../pug/blocks/ui-kit_blocks/ui-kit_buttons/ui-kit_buttons.scss";
-// @import "../../pug/blocks/ui-kit_blocks/ui-kit_inputs/ui-kit_inputs.scss";
-// @import "../../pug/blocks/ui-kit_blocks/ui-kit_texts/ui-kit_texts.scss";
+// Styles of elements
+@import "../../pug/elements/texts/texts.scss";
+@import "../../pug/elements/buttons/buttons.scss";
+@import "../../pug/elements/animations/animations.scss";
+
+// Styles of Blocks
+@import "../../pug/blocks/index_blocks/index_upper/index_upper.scss";
+
+@import "../../pug/blocks/index_blocks/index_love/index_love.scss";
+
+@import "../../pug/blocks/index_blocks/index_step-1/index_step-1.scss";
+
+body{
+  padding-top: 230px;
+}

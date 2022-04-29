@@ -1,5 +1,21 @@
-//- include ../../elements/buttons/buttons
-//- include ../../elements/inputs/inputs
-//- include ../../elements/texts/texts
+include ../../../elements/texts/texts
+include ../../../elements/buttons/buttons
+//- include ../../../elements/inputs/inputs
 
-+h1("title", "Own your audience.")
+
+
+.index__upper
+  .index__upper-text
+    h1(class="title") Own your audience. 
+      br
+      span So you don't lose them.
+    p(class="desc") Turn your audience into email and text message subscribers.
+  .index__upper-btns 
+    +button("btn--mean btn--primary", "error/404", "Get Start Now")
+    +button("btn--mean btn--border-gray", "error/404", "View A Demo")
+  .index__upper-status 
+    .index__upper-status-img 
+      img(src=require("@src/assets/dot/upper.svg") alt="choco")
+    p 
+      span 1000+ 
+      | creators have already started

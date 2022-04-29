@@ -1,0 +1,71 @@
+.love{
+  padding-bottom: 160px;
+}
+
+
+.love__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.love__item:nth-child(1) h3::before{
+  content: "";
+
+  position: absolute;
+  top: -20%;
+  left: 0;
+
+  width: 32px;
+  height: 32px;
+
+  background: url("../../pug/blocks/index_blocks/index_love/assets/smile.svg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.love__item:nth-child(2) h3:before {
+  content: "";
+
+  position: absolute;
+  top: -20%;
+  left: 0;
+
+  width: 32px;
+  height: 32px;
+
+  background: url("../../pug/blocks/index_blocks/index_love/assets/happy.svg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.love__item:nth-child(3) h3:before {
+  content: "";
+
+  position: absolute;
+  top: -20%;
+  left: 0;
+
+  width: 32px;
+  height: 32px;
+
+  background: url("../../pug/blocks/index_blocks/index_love/assets/party.svg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.love__title{
+  text-align: center;
+}
+
+.love__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.love__item h3{
+  padding-left: 40px;
+
+  position: relative;
+  padding-bottom: 15px;
+}

@@ -109,9 +109,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {
-    extensions: ['.js', '.json', '.png', '.css'],
+    extensions: ['.js', '.json', '.png', '.css', 'scss'],
     alias: {
       '@models': path.resolve(__dirname, 'src/models'),
+      '@blocks': path.resolve(__dirname, 'src/pug/blocks'),
+      '@elements': path.resolve(__dirname, 'src/pug/elements'),
       '@src': path.resolve(__dirname, 'src')
     }
   },
@@ -140,8 +142,12 @@ module.exports = {
         use: cssLoader('sass-loader')
       },
       {
-       test: /\.(png|jpg|svg|gif)/,
-       type: 'asset/resource'
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff|ttf|svg)$/i,
+        type: "asset/resource",
       },
       {
         test: /\.xml$/,

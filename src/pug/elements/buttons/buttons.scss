@@ -44,14 +44,7 @@
   padding: 24px 12px;
 }
 
-.btn--mean {
-  max-width: 313px;
-  width: 100%;
-
-  padding: 24px 12px;
-}
-
-.btn--white{
+.btn--white {
   background-color: #ffffff;
 
   color: #3C82F4;
@@ -67,8 +60,15 @@
 
   padding: 12px 15px;
 
-  &:hover{
+  &:hover {
     color: #b4c9ff;
   }
 
+}
+
+.btn--mean {
+  max-width: 313px;
+  width: 100%;
+
+  padding: 24px 12px;
 }
